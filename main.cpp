@@ -10,7 +10,7 @@
 
 using namespace std;
 
-typedef vector<Shape*> Collection;
+using Collection = vector<Shape*> ;
 
 bool sortByArea(Shape* first, Shape* second)
 {
@@ -41,11 +41,11 @@ bool areaLessThan10(Shape* s)
 
 void printCollectionElements(const Collection& collection)
 {
-    for(Collection::const_iterator it = collection.begin(); it != collection.end(); ++it)
+    for(const auto& element : collection)
     {
-        if(*it != nullptr)
+        if(element)
         {
-            (*it)->print();
+            element->print();
         }
     }
 }
@@ -58,17 +58,17 @@ void printArea(std::string name, double area)
 void printAreas(const Collection& collection)
 {
     std::vector<std::thread> threads;
-    for(vector<Shape*>::const_iterator it = collection.begin(); it != collection.end(); ++it)
+    for(const auto& element : collection)
     {
-        if(*it != nullptr)
+        if(element)
         {
-            std::thread th(printArea, (*it)->getName(), (*it)->getArea());
+            std::thread th(printArea, element->getName(), element->getArea());
             threads.push_back(std::move(th));
         }
     }
-    for(unsigned int i = 0; i < threads.size(); i++)
+    for(auto& thread : threads)
     {
-        threads[i].join();
+        thread.join();
     }
 }
 
@@ -76,7 +76,7 @@ void findFirstShapeMatchingPredicate(const Collection& collection,
                                      bool (*predicate)(Shape* s),
                                      std::string info)
 {
-    Collection::const_iterator iter = std::find_if(collection.begin(), collection.end(), predicate);
+    auto iter = std::find_if(collection.begin(), collection.end(), predicate);
     if(*iter != nullptr)
     {
         cout << std::endl << "First shape matching predicate: " << info << endl;
@@ -108,7 +108,7 @@ BlockingQueue g_queue;
 
 void runQueue()
 {
-    bool running = true;
+    auto running = true;
     while(running)
     {
         Shape * shape = g_queue.pop();
@@ -126,9 +126,19 @@ void runQueue()
 
 void pushShapesToQueue(Collection const& shapes)
 {
-    for(int i = 0; i < shapes.size(); ++i)
+    for(auto shape : shapes)
     {
-        g_queue.push(shapes[i]);
+        g_queue.push(shape);
+    }
+}
+
+void printColors(Collection const& shapes)
+{
+    for(auto& shape : shapes)
+    {
+        if(shape)
+            std::cout<<"Shape: "<< shape->getName() << " Color is: " << shape->getColor() <<std::endl;
+        else std::cout<<"Undefined shape or shape color missing"<<std::endl;
     }
 }
 
@@ -153,7 +163,10 @@ int main()
     cout << std::endl << "Areas after sort: " << std::endl;
     printAreas(shapes);
 
-    Square* square = new Square(4.0);
+    std::cout<<"Shapes colors are: "<<std::endl;
+    printColors(shapes);
+
+    auto square = new Square(4.0);
     shapes.push_back(square);
 
     findFirstShapeMatchingPredicate(shapes, perimeterBiggerThan20, "perimeter bigger than 20");

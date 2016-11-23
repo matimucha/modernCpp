@@ -60,15 +60,15 @@ include CMakeFiles/modern_cpp.dir/flags.make
 CMakeFiles/modern_cpp.dir/Square.cpp.o: CMakeFiles/modern_cpp.dir/flags.make
 CMakeFiles/modern_cpp.dir/Square.cpp.o: Square.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/muszak/modernCpp/modern_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/modern_cpp.dir/Square.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/Square.cpp.o -c /home/muszak/modernCpp/modern_cpp/Square.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/Square.cpp.o -c /home/muszak/modernCpp/modern_cpp/Square.cpp
 
 CMakeFiles/modern_cpp.dir/Square.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modern_cpp.dir/Square.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/Square.cpp > CMakeFiles/modern_cpp.dir/Square.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/Square.cpp > CMakeFiles/modern_cpp.dir/Square.cpp.i
 
 CMakeFiles/modern_cpp.dir/Square.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modern_cpp.dir/Square.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/Square.cpp -o CMakeFiles/modern_cpp.dir/Square.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/Square.cpp -o CMakeFiles/modern_cpp.dir/Square.cpp.s
 
 CMakeFiles/modern_cpp.dir/Square.cpp.o.requires:
 
@@ -84,15 +84,15 @@ CMakeFiles/modern_cpp.dir/Square.cpp.o.provides.build: CMakeFiles/modern_cpp.dir
 CMakeFiles/modern_cpp.dir/main.cpp.o: CMakeFiles/modern_cpp.dir/flags.make
 CMakeFiles/modern_cpp.dir/main.cpp.o: main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/muszak/modernCpp/modern_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/modern_cpp.dir/main.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/main.cpp.o -c /home/muszak/modernCpp/modern_cpp/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/main.cpp.o -c /home/muszak/modernCpp/modern_cpp/main.cpp
 
 CMakeFiles/modern_cpp.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modern_cpp.dir/main.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/main.cpp > CMakeFiles/modern_cpp.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/main.cpp > CMakeFiles/modern_cpp.dir/main.cpp.i
 
 CMakeFiles/modern_cpp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modern_cpp.dir/main.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/main.cpp -o CMakeFiles/modern_cpp.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/main.cpp -o CMakeFiles/modern_cpp.dir/main.cpp.s
 
 CMakeFiles/modern_cpp.dir/main.cpp.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/modern_cpp.dir/main.cpp.o.provides.build: CMakeFiles/modern_cpp.dir/m
 CMakeFiles/modern_cpp.dir/Circle.cpp.o: CMakeFiles/modern_cpp.dir/flags.make
 CMakeFiles/modern_cpp.dir/Circle.cpp.o: Circle.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/muszak/modernCpp/modern_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/modern_cpp.dir/Circle.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/Circle.cpp.o -c /home/muszak/modernCpp/modern_cpp/Circle.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/Circle.cpp.o -c /home/muszak/modernCpp/modern_cpp/Circle.cpp
 
 CMakeFiles/modern_cpp.dir/Circle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modern_cpp.dir/Circle.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/Circle.cpp > CMakeFiles/modern_cpp.dir/Circle.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/Circle.cpp > CMakeFiles/modern_cpp.dir/Circle.cpp.i
 
 CMakeFiles/modern_cpp.dir/Circle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modern_cpp.dir/Circle.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/Circle.cpp -o CMakeFiles/modern_cpp.dir/Circle.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/Circle.cpp -o CMakeFiles/modern_cpp.dir/Circle.cpp.s
 
 CMakeFiles/modern_cpp.dir/Circle.cpp.o.requires:
 
@@ -132,15 +132,15 @@ CMakeFiles/modern_cpp.dir/Circle.cpp.o.provides.build: CMakeFiles/modern_cpp.dir
 CMakeFiles/modern_cpp.dir/Rectangle.cpp.o: CMakeFiles/modern_cpp.dir/flags.make
 CMakeFiles/modern_cpp.dir/Rectangle.cpp.o: Rectangle.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/muszak/modernCpp/modern_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/modern_cpp.dir/Rectangle.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/Rectangle.cpp.o -c /home/muszak/modernCpp/modern_cpp/Rectangle.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/Rectangle.cpp.o -c /home/muszak/modernCpp/modern_cpp/Rectangle.cpp
 
 CMakeFiles/modern_cpp.dir/Rectangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modern_cpp.dir/Rectangle.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/Rectangle.cpp > CMakeFiles/modern_cpp.dir/Rectangle.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/Rectangle.cpp > CMakeFiles/modern_cpp.dir/Rectangle.cpp.i
 
 CMakeFiles/modern_cpp.dir/Rectangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modern_cpp.dir/Rectangle.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/Rectangle.cpp -o CMakeFiles/modern_cpp.dir/Rectangle.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/Rectangle.cpp -o CMakeFiles/modern_cpp.dir/Rectangle.cpp.s
 
 CMakeFiles/modern_cpp.dir/Rectangle.cpp.o.requires:
 
@@ -156,15 +156,15 @@ CMakeFiles/modern_cpp.dir/Rectangle.cpp.o.provides.build: CMakeFiles/modern_cpp.
 CMakeFiles/modern_cpp.dir/Shape.cpp.o: CMakeFiles/modern_cpp.dir/flags.make
 CMakeFiles/modern_cpp.dir/Shape.cpp.o: Shape.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/muszak/modernCpp/modern_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/modern_cpp.dir/Shape.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/Shape.cpp.o -c /home/muszak/modernCpp/modern_cpp/Shape.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modern_cpp.dir/Shape.cpp.o -c /home/muszak/modernCpp/modern_cpp/Shape.cpp
 
 CMakeFiles/modern_cpp.dir/Shape.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modern_cpp.dir/Shape.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/Shape.cpp > CMakeFiles/modern_cpp.dir/Shape.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/muszak/modernCpp/modern_cpp/Shape.cpp > CMakeFiles/modern_cpp.dir/Shape.cpp.i
 
 CMakeFiles/modern_cpp.dir/Shape.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modern_cpp.dir/Shape.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/Shape.cpp -o CMakeFiles/modern_cpp.dir/Shape.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/muszak/modernCpp/modern_cpp/Shape.cpp -o CMakeFiles/modern_cpp.dir/Shape.cpp.s
 
 CMakeFiles/modern_cpp.dir/Shape.cpp.o.requires:
 

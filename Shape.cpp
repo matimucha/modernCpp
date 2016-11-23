@@ -11,3 +11,7 @@ std::string Shape::getName() const
     return "Shape";
 }
 
+uint Shape::getColor() const
+{
+    return color;
+}

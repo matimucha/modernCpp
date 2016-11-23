@@ -5,7 +5,7 @@
 class Circle : public Shape
 {
 public:
-    Circle(double r);
+    Circle(double r, Colors color = Colors::BLUE);
     Circle(const Circle & other);
 
     double getArea() const;
@@ -13,9 +13,8 @@ public:
     double getRadius() const;
     std::string getName() const;
     void print() const;
-
+    uint getColor() const;
+    Circle() = delete; // doesn't allow to call default constructor
 private:
-    Circle(); // doesn't allow to call default constructor
-
     double r_;
 };

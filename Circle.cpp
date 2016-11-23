@@ -2,9 +2,11 @@
 #include <math.h>
 #include <iostream>
 
-Circle::Circle(double r)
+Circle::Circle(double r, Colors circleColor)
     : r_(r)
-{}
+{
+    color = circleColor;
+}
 
 Circle::Circle(const Circle & other)
 {
@@ -24,6 +26,11 @@ double Circle::getPerimeter() const
 double Circle::getRadius() const
 {
     return r_;
+}
+
+uint Circle::getColor() const
+{
+    return Shape::getColor();
 }
 
 std::string Circle::getName() const

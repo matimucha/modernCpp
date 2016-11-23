@@ -1,10 +1,12 @@
 #include "Rectangle.hpp"
 #include <iostream>
 
-Rectangle::Rectangle(double x, double y)
+Rectangle::Rectangle(double x, double y, Colors rectangleColor)
     : x_(x),
       y_(y)
-{}
+{
+    color = rectangleColor;
+}
 
 Rectangle::Rectangle(const Rectangle &other)
 {
@@ -31,6 +33,12 @@ double Rectangle::getY() const
 {
     return y_;
 }
+
+uint Rectangle::getColor() const
+{
+    return Shape::getColor();
+}
+
 
 std::string Rectangle::getName() const
 {
