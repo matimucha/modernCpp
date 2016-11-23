@@ -8,13 +8,13 @@ public:
     Rectangle(double x, double y, Colors color = Colors::GREEN);
     Rectangle(const Rectangle & other);
 
-    double getArea() const;
-    double getPerimeter() const;
+    double getArea() const override;
+    double getPerimeter() const override;
     double getX() const;
     double getY() const;
-    uint getColor() const;
-    std::string getName() const;
-    void print() const;
+    uint getColor() const override;
+    std::string getName() const override;
+    void print() const override;
 
     Rectangle() = delete;
 

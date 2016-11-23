@@ -20,7 +20,7 @@ double Circle::getArea() const
 
 double Circle::getPerimeter() const
 {
-    return 2 * M_PI * r_;
+    return 2 * getPi() * r_;
 }
 
 double Circle::getRadius() const
@@ -36,6 +36,11 @@ uint Circle::getColor() const
 std::string Circle::getName() const
 {
     return "Circle";
+}
+
+double Circle::getPi() const
+{
+    return (22/7);
 }
 
 void Circle::print() const
