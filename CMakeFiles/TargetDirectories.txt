@@ -1,0 +1,3 @@
+/home/muszak/modernCpp/modern_cpp/CMakeFiles/rebuild_cache.dir
+/home/muszak/modernCpp/modern_cpp/CMakeFiles/edit_cache.dir
+/home/muszak/modernCpp/modern_cpp/CMakeFiles/modern_cpp.dir
