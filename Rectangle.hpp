@@ -8,8 +8,8 @@ public:
     Rectangle(double x, double y, Colors color = Colors::GREEN);
     Rectangle(const Rectangle & other);
 
-    double getArea() const override;
-    double getPerimeter() const override;
+    double getArea() const noexcept override;
+    double getPerimeter() const noexcept override;
     double getX() const;
     double getY() const;
     uint getColor() const override;

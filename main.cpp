@@ -108,7 +108,7 @@ BlockingQueue g_queue;
 
 void runQueue()
 {
-    auto running = true;
+    constexpr auto running = true;
     while(running)
     {
         Shape * shape = g_queue.pop();
