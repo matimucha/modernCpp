@@ -2,10 +2,16 @@
 #include <math.h>
 #include <iostream>
 
-Circle::Circle(double r, Colors circleColor)
-    : r_(r)
+Circle::Circle(Colors circleColor)
 {
     color = circleColor;
+}
+
+Circle::Circle(double r, Colors circleColor)
+    : Circle(circleColor)
+{
+    r_ = r;
+    //color = circleColor;
 }
 
 Circle::Circle(const Circle & other)

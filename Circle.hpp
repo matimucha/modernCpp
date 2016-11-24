@@ -5,6 +5,7 @@
 class Circle : public Shape
 {
 public:
+    Circle(Colors circleColor);
     Circle(double r, Colors color = Colors::BLUE);
     Circle(const Circle & other);
 

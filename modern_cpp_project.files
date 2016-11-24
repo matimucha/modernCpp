@@ -31,7 +31,6 @@ CMakeCache.txt
 CMakeLists.txt
 install_packages.sh
 main.cpp
-modern_cpp
 README.txt
 Rectangle.cpp
 Rectangle.hpp
@@ -39,3 +38,4 @@ Shape.cpp
 Shape.hpp
 Square.cpp
 Square.hpp
+makeshape.cpp

@@ -7,37 +7,38 @@
 #include "Rectangle.hpp"
 #include "Square.hpp"
 #include "Circle.hpp"
+#include "../modern_cpp/makeshape.cpp"
 
 using namespace std;
 
 using Collection = vector<std::shared_ptr<Shape>> ;
 
-bool sortByArea(std::shared_ptr<Shape> first, std::shared_ptr<Shape> second)
+auto sortByArea = [](std::shared_ptr<const Shape> const& first, std::shared_ptr<const Shape> const& second)
 {
     if(first == nullptr || second == nullptr)
     {
         return false;
     }
     return (first->getArea() < second->getArea());
-}
+};
 
-bool perimeterBiggerThan20(std::shared_ptr<Shape> s)
+auto perimeterBiggerThan20 = [](std::shared_ptr<Shape> s)
 {
     if(s)
     {
         return (s->getPerimeter() > 20);
     }
     return false;
-}
+};
 
-bool areaLessThan10(std::shared_ptr<Shape> s)
+auto areaLessThan10 = [](std::shared_ptr<Shape> s)
 {
     if(s)
     {
         return (s->getArea() < 10);
     }
     return false;
-}
+};
 
 void printCollectionElements(const Collection& collection)
 {
@@ -144,13 +145,13 @@ void printColors(Collection const& shapes)
 
 int main()
 {
-    Collection shapes = { make_shared<Circle>(2.0),
-                          make_shared<Circle>(3.0),
+    Collection shapes = { make_shape<Circle>(2.0), //std::make_shared replaced by variadic template
+                          std::make_shared<Circle>(3.0), //function make_shape
                           nullptr,
-                          make_shared<Circle>(4.0),
-                          make_shared<Rectangle> (10.0, 5.0),
-                          make_shared<Square> (3.0),
-                          make_shared<Circle>(4.0) };
+                          make_shape<Circle>(4.0),
+                          make_shape<Rectangle> (10.0, 5.0),
+                          std::make_shared<Square> (3.0),
+                          std::make_shared<Circle>(4.0) };
     /*shapes.push_back(new Circle(2.0));
     shapes.push_back(new Circle(3.0));
     shapes.push_back(nullptr);

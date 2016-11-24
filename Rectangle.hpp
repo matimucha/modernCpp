@@ -5,6 +5,7 @@
 class Rectangle : public Shape
 {
 public:
+    Rectangle(Colors rectangleColor);
     Rectangle(double x, double y, Colors color = Colors::GREEN);
     Rectangle(const Rectangle & other);
 

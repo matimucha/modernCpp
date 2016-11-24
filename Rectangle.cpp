@@ -1,11 +1,17 @@
 #include "Rectangle.hpp"
 #include <iostream>
 
-Rectangle::Rectangle(double x, double y, Colors rectangleColor)
-    : x_(x),
-      y_(y)
+Rectangle::Rectangle(Colors rectangleColor)
 {
     color = rectangleColor;
+}
+
+Rectangle::Rectangle(double x, double y, Colors rectangleColor)
+    : Rectangle(rectangleColor)
+{
+    //color = rectangleColor;
+    x_ = x;
+    y_ = y;
 }
 
 Rectangle::Rectangle(const Rectangle &other)

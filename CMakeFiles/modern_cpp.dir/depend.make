@@ -22,4 +22,5 @@ CMakeFiles/modern_cpp.dir/main.cpp.o: Rectangle.hpp
 CMakeFiles/modern_cpp.dir/main.cpp.o: Shape.hpp
 CMakeFiles/modern_cpp.dir/main.cpp.o: Square.hpp
 CMakeFiles/modern_cpp.dir/main.cpp.o: main.cpp
+CMakeFiles/modern_cpp.dir/main.cpp.o: makeshape.cpp
 
