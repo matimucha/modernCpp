@@ -146,7 +146,7 @@ void printColors(Collection const& shapes)
 int main()
 {
     Collection shapes = { make_shape<Circle>(2.0), //std::make_shared replaced by variadic template
-                          std::make_shared<Circle>(3.0), //function make_shape
+                          std::make_shared<Circle>(3.0), //function make_shape, does same thing
                           nullptr,
                           make_shape<Circle>(4.0),
                           make_shape<Rectangle> (10.0, 5.0),
